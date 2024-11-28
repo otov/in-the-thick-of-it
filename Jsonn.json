@@ -1,0 +1,28 @@
+{
+"Sheet1":[
+ {
+  "Vārds": "Juris",
+  "Uzvārds": "Kalniņš",
+  "Atzīme": 2,
+  "Sekmīgs": "Nē"
+ },
+ {
+  "Vārds": "Raimonds",
+  "Uzvārds": "Leja",
+  "Atzīme": 6,
+  "Sekmīgs": "Jā"
+ },
+ {
+  "Vārds": "Petrovs",
+  "Uzvārds": "Liepa",
+  "Atzīme": 8,
+  "Sekmīgs": "Jā"
+ },
+ {
+  "Vārds": "Mareks",
+  "Uzvārds": "Bahmanis",
+  "Atzīme": 5,
+  "Sekmīgs": "Jā"
+ }
+]
+}
