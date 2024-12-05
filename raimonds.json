@@ -1,0 +1,16 @@
+{
+  "persona": {
+    "vārds": "Raimonds",
+    "vecums": 22,
+    "pilseta": "Valmiera",
+    "hobijs": [
+      "basketbols",
+      "video speeles"
+    ]
+  },
+  "uznemums": {
+    "nosaukums": "SIA Apik",
+    "amats": "klientu support",
+    "darbinieki": 32
+  }
+}
