@@ -22,7 +22,7 @@ try:
         largest_pop_c=max(countries_data, key=lambda x: x.get("population",0))
         largest_pop_n=largest_pop_c.get("name",{}).get("common","Nezināmis nosaukums")
         largest_pop = largest_pop_c.get("population",0)
-        print(f"\nValsts ar vislielāko iedzīvotāju skaitu: {largest_pop_n} ({largest_pop:,.0}) iedzīvotāji")
+        print(f"\nValsts ar vislielāko iedzīvotāju skaitu: {largest_pop_n} ({largest_pop}) iedzīvotāji")
 
         total_area = sum(country.get("area",0) for country in countries_data)
         print(f"\nVisu valstu kopējā platība; {total_area} kvadrātkilometri.")
@@ -30,5 +30,16 @@ try:
         latvia_info = next((country for country in countries_data if country.get("name",{}).get ("common") =="Latvia"), None)
 
         if latvia_info:
-            
+            subregion = latvia_info.get("subregion","Nav pieejams")
+            print(f"\nLatvijas apakšreģions: {subregion}")
 
+            borders = latvia_info.get("borders", "Nav pieejami robežvalstu kodi")
+            print(f"\nLatvijas robežvalstu kodi: {borders}")
+        else:
+            print("Latvija nav atrasta valstu sarakstā!")
+
+    else:
+        print(f"Pieprasījuma kļūda. Statusa kods: {response.staus_code}")
+
+except requests.exeptions.RequestExeption as e:
+    print(f"Notikusi kļūda pieprasījumā : {e}")
